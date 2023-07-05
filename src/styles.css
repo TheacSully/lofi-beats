@@ -26,20 +26,18 @@ p {
   width: 150px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .top-column {
+  width: 100%;
   display: grid;
+  margin-top: 10px;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  margin-bottom: 10px;
 }
 
 .bottom-column {
+  width: 100%;
   display: grid;
+  margin-top: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
@@ -47,18 +45,12 @@ p {
 .video {
   width: 100%;
   aspect-ratio: 16/9;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
-  .top-column {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    margin-bottom: 10px;
-  }
+  .top-column,
   .bottom-column {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
   }
 }
